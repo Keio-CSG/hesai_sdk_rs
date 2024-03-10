@@ -91,5 +91,6 @@ fn main() {
 
     // println!("cargo:rerun-if-changed=src/lib.rs");
 
-    copy_to_output("cpp/HesaiLidar_SDK_2.0/correction", &env::var("PROFILE").unwrap()).expect("Failed to copy correction files");
+    let correction_path = format!("{}/cpp/HesaiLidar_SDK_2.0/correction", env::var("CARGO_MANIFEST_DIR").unwrap());
+    copy_to_output(&correction_path, &env::var("PROFILE").unwrap()).expect("Failed to copy correction files");
 }

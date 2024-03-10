@@ -13,5 +13,5 @@ libc = "0.2.153"
 autocxx-build = "0.26.0"
 bindgen = "0.69.4"
 cmake = "0.1.50"
-copy_to_output = "2.2.0"
+copy_to_output = { git = "https://github.com/organic-nailer/copy_to_output.git" }
 miette = { version = "7.0.0", features = ["fancy"] }
